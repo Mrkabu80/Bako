@@ -1,0 +1,40 @@
+/* Custom Styles */
+.hero-gradient {
+  background: linear-gradient(
+    135deg,
+    #1e3a8a 0%,
+    #1e40af 50%,
+    #3b82f6 100%
+  );
+}
+.product-card:hover .product-overlay {
+  opacity: 1;
+  transform: translateY(0);
+}
+.product-overlay {
+  transition: all 0.3s ease;
+  opacity: 0;
+  transform: translateY(20px);
+}
+.language-dropdown {
+  pointer-events: none;
+}
+.group:hover .language-dropdown {
+  pointer-events: auto;
+}
+.nav-link {
+  position: relative;
+}
+.nav-link:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -2px;
+  left: 0;
+  background-color: #3b82f6;
+  transition: width 0.3s ease;
+}
+.nav-link:hover:after {
+  width: 100%;
+}
