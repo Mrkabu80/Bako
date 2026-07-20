@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="Assets/fav.jpg" />
+    <title data-i18n="BAKO Group">BAKO Group</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      .product-card {
+        transition: all 0.4s ease-in-out;
+      }
+      .product-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+      }
+      .product-card .image-wrapper {
+        height: 500px; /* Maximized height */
+      }
+      /* Modal styles */
+      .modal {
+        transition: opacity 0.3s ease;
+      }
+      .modal-content {
+        transition: transform 0.3s ease;
+      }
+    </style>
+  </head>
+  <body class="font-sans antialiased text-gray-800">
+    <div id="header-placeholder"></div>
+
+<section id="filter-section" class="container mx-auto px-4 py-8">
+   <div id="category-filters" class="flex flex-wrap gap-3 justify-center mb-8">
+     <!-- Filter buttons will be dynamically inserted here by main.js -->
+   </div>
+</section>
+
+<div class="container mx-auto px-4 py-12">
+   <!-- Responsive product grid -->
+   <div
+     id="product-grid"
+     class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10"
+   >
+     <!-- Product cards will be dynamically inserted here by main.js -->
+   </div>
+</div>
+  <div id="footer-placeholder"></div>
+
+    <script src="main.js"></script>
+
+    <!-- Product Detail Modal -->
+    <div
+      id="product-modal"
+      class="modal fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center z-50 hidden opacity-0"
+    >
+      <div
+        class="modal-content text-white rounded-2xl shadow-2xl w-full md:w-5/6 lg:w-4/5 max-w-6xl m-4 transform scale-95 bg-gray-900 max-h-screen overflow-y-auto"
+      >
+        <div class="grid grid-cols-1 md:grid-cols-6 gap-0">
+          <!-- Image Side -->
+          <div class="md:col-span-2 p-8 flex items-center justify-center rounded-t-2xl md:rounded-l-2xl md:rounded-tr-none">
+            <div class="w-full flex justify-center items-center">
+              <img
+                id="modal-image"
+                src=""
+                alt="Product Image"
+                class="object-cover w-full h-[350px] sm:h-[400px] md:h-[450px] lg:h-[500px] rounded-lg shadow-lg"
+              />
+            </div>
+          </div>
+          <!-- Details Side -->
+          <div
+            class="md:col-span-4 p-8 flex flex-col relative bg-black/60 rounded-b-2xl md:rounded-r-2xl md:rounded-bl-none"
+          >
+            <button
+              id="close-modal"
+              class="absolute top-4 right-4 text-blue-400 hover:text-white text-4xl font-light"
+            >
+              &times;
+            </button>
+            <h2 id="modal-name" class="text-4xl font-bold mb-2 text-white"></h2>
+            <p
+              id="modal-viscosity"
+              class=" text-yellow-700 text-2xl font-semibold mb-6"
+            ></p>
+            <p id="modal-description" class="text-gray-200 mb-8"></p>
+            <!-- Product Table -->
+            <div class="overflow-x-auto mt-4">
+              <table class="min-w-full rounded-lg overflow-hidden bg-gray-900 text-white border border-gray-700">
+                <thead>
+                  <tr>
+                    <th class="px-4 py-2 border-b border-gray-700 bg-gray-800" data-i18n="PHYSICO-CHEMICAL PARAMETERS">PHYSICO-CHEMICAL PARAMETERS</th>
+                    <th class="px-4 py-2 border-b border-gray-700 bg-gray-800" data-i18n="Test Value">Test Value</th>
+                    <th class="px-4 py-2 border-b border-gray-700 bg-gray-800" data-i18n="Test Method">Test Method</th>
+                    <th class="px-4 py-2 border-b border-gray-700 bg-gray-800" data-i18n="Unit">Unit</th>
+                  </tr>
+                </thead>
+                <tbody id="modal-table-body">
+                  <!-- Table rows will be injected here -->
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- About Modal -->
+    <div
+      id="about-modal"
+      class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 hidden opacity-0 transition-opacity duration-300"
+    >
+      <div
+        class="hero-gradient rounded-lg shadow-lg p-8 w-11/12 md:w-1/2 relative transform scale-95 transition-transform duration-300 text-white"
+      >
+        <button
+          id="close-about-modal"
+          class="absolute top-2 right-2 text-white hover:text-gray-300 text-xl"
+        >
+          &times;
+        </button>
+        <div id="about-modal-placeholder"></div>
+        <button
+          id="close-about-modal-button"
+          class="mt-6 bg-white/20 text-white px-4 py-2 rounded hover:bg-white/30"
+          data-i18n="Close"
+        >
+          Close
+        </button>
+      </div>
+    </div>
+  </body>
+</html>
+  </body>
+</html>

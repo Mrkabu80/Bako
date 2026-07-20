@@ -1,0 +1,112 @@
+<header class="bg-white shadow-sm fixed top-0 left-0 right-0 z-50">
+  <div class="container mx-auto px-4 flex items-center justify-between lg:justify-start py-3">
+    <!-- Logo -->
+    <div class="flex items-center flex-shrink-0 order-2 lg:order-none">
+      <a href="index.html" class="flex items-center">
+        <img
+          src="Assets/logo.jpg"
+          alt="Bako Logo"
+          class="h-12 rounded hero-gradient shadow"
+        />
+        <div class="ml-2 flex flex-col">
+          <span class="text-2xl font-extrabold text-black tracking-wide">BAKO</span>
+          <div class="text-xs text-yellow-700" data-i18n="Best Automotive Kinetics Oil & Lubricants">
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <!-- Desktop Navigation -->
+    <nav class="hidden lg:flex space-x-8 flex-1 justify-center">
+      <a href="index.html" class="nav-link text-black font-semibold hover:text-yellow-700 transition-colors duration-200" data-i18n="HOME"></a>
+      <a href="products.html" class="nav-link text-black font-semibold hover:text-yellow-700 transition" data-i18n="PRODUCTS"></a>
+      <a href="Certificates.html" class="nav-link text-black font-semibold hover:text-yellow-700 transition" data-i18n="Certificates"></a>
+      <a href="contact.html" class="nav-link text-black font-semibold hover:text-yellow-700 transition" data-i18n="Contact Us"></a>
+      <a href="about.html" class="nav-link text-black font-semibold hover:text-yellow-700 transition" data-i18n="ABOUT"></a>
+      <a href="/Assets/Home/BAKO.pdf" class="nav-link text-black font-semibold hover:text-yellow-700 transition" data-i18n="Catalog"></a>
+    </nav>
+
+    <!-- 🌐 Language Selector -->
+<div class="language-selector relative flex flex-shrink-0 order-3 lg:order-none">
+  <button id="open-lang-modal" class="flex items-center py-2 rounded-md">
+    <i class="fas fa-globe text-black hover:text-yellow-700"></i>
+    <span class="hidden lg:inline ml-1 transition hover:text-yellow-700 text-black" data-i18n="Language">
+    </span>
+  </button>
+</div>
+
+<!-- 🌐 Language Modal -->
+<div
+  id="lang-modal"
+  class="fixed inset-0 bg-black bg-opacity-40 flex items-center justify-center z-50 hidden"
+>
+  <div class="bg-white rounded-lg shadow-lg p-8 w-80 relative">
+    <button
+      id="close-lang-modal"
+      class="absolute top-2 right-2 text-gray-500 hover:text-red-500 text-xl"
+    >
+      &times;
+    </button>
+    <h2 class="text-xl font-bold mb-4 text-yellow-700" data-i18n="Select Language">
+    </h2>
+    <div class="flex flex-col gap-4">
+      <button class="lang-modal-btn bg-gray-100 hover:bg-gray-200 font-semibold py-2 rounded text-black" data-lang="en">
+        <span data-i18n="English">English</span>
+      </button>
+      <button class="lang-modal-btn bg-gray-100 hover:bg-gray-200 font-semibold py-2 rounded text-black" data-lang="ko">
+        <span data-i18n="Korean">한국어</span>
+      </button>
+      <button class="lang-modal-btn bg-gray-100 hover:bg-gray-200 font-semibold py-2 rounded text-black" data-lang="tr">
+        <span data-i18n="Turkish">Türkçe</span>
+      </button>
+      <button class="lang-modal-btn bg-gray-100 hover:bg-gray-200 font-semibold py-2 rounded text-black" data-lang="fr">
+        <span data-i18n="French">Français</span>
+      </button>
+      <button class="lang-modal-btn bg-gray-100 hover:bg-gray-200 font-semibold py-2 rounded text-black" data-lang="zh">
+        <span data-i18n="Chinese">中文</span>
+      </button>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+    <!-- Mobile Menu Button -->
+    <button
+      id="mobile-menu-button"
+      class="lg:hidden text-black focus:outline-none p-2 rounded hover:bg-blue-50 transition order-1 lg:order-none"
+      aria-label="Open menu"
+    >
+      <i class="fas fa-bars text-2xl text-yellow-700"></i>
+    </button>
+  </div>
+
+  <!-- Mobile Menu -->
+  <div
+    id="mobile-menu"
+    class="hidden lg:hidden bg-white border-t border-blue-200 transform origin-top transition-all duration-300"
+  >
+    <div class="container mx-auto px-4 py-4 flex flex-col gap-2">
+      <div>
+        <a href="index.html" class="font-bold text-black hover:text-yellow-700 transition" data-i18n="HOME"></a>
+      </div>
+      <div>
+        <a href="products.html" class="font-bold text-black hover:text-yellow-700 transition" data-i18n="PRODUCTS"></a>
+      </div>
+      <div>
+        <a href="Certificates.html" class="font-bold text-black hover:text-yellow-700 transition" data-i18n="Certificates"></a>
+      </div>
+      <div>
+        <a href="about.html" class="font-bold text-black hover:text-yellow-700 transition" data-i18n="ABOUT"></a>
+      </div>
+      <div>
+        <a href="contact.html" class="font-bold text-black hover:text-yellow-700 transition" data-i18n="Contact Us"></a>
+      </div>
+      <div>
+        <a href="/Assets/Home/BAKO.pdf" class="font-bold text-black hover:text-yellow-700 transition" data-i18n="Catalog"></a>
+      </div>
+    </div>
+  </div>
+</header>

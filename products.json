@@ -1,0 +1,268 @@
+[
+  
+  {
+    "id": 1,
+    "name": "Bako SAE 0W-20 API SP",
+    "viscosity": "Petrol Engine Oil",
+    "viscosity_ko": "휘발유 엔진 오일",
+    "image": "Assets/Products/0w-20-4l.jpg",
+    "category": "Petrol",
+
+    "color": "#3e646a",
+    "table":[
+  ["APPEARANCE (Visual)", "Bright and Clear", "-", "-"],
+  ["COLOR", "L2.0", "ASTM D1500", "-"],
+  ["KIN. VIS. @ 40°C", "53.40", "ASTM D445", "cSt"],
+  ["KIN. VIS. @ 100°C", "8.12", "ASTM D445", "cSt"],
+  ["VISCOSITY INDEX", "122", "ASTM D2270", "-"],
+  ["DENSITY @ 15°C", "0.868", "ASTM D4052", "g/cm3"],
+  ["TOTAL BASE NUMBER (TBN)", "5.28", "ASTM D2896", "mgKOH/g"],
+  ["FLASH POINT (COC)", "225", "ASTM D92", "°C"]
+]
+  },
+  {
+    "id": 2,
+    "name": "Bako SAE 0W-30 API SP",
+    "viscosity": "Petrol Engine Oil",
+    "viscosity_ko": "휘발유 엔진 오일",
+    "image": "Assets/Products/0w-30-4l.jpg",
+    "category": "Petrol",
+    "color": "#3e646a",
+    "table": [
+      ["APPEARANCE (Visual)", "Bright and Clear", "Visual", ""],
+      ["COLOR", "L2.0", "ASTM D1500", ""],
+      ["KINEMATIC VISCOSITY @ 40°C", "78.14", "ASTM D445", "cSt"],
+      ["KINEMATIC VISCOSITY @ 100°C", "10.52", "ASTM D445", "cSt"],
+      ["VISCOSITY INDEX", "120", "ASTM D2270", ""],
+      ["DENSITY @ 15°C", "0.868", "ASTM D4052", "g/cm3"],
+      ["TOTAL BASE NUMBER (TBN)", "5.26", "ASTM D2896", "mgKOH/g"],
+      ["FLASH POINT (COC)", "225", "ASTM D92", "°C"],
+      ["POUR POINT", "-30", "ASTM D97", "°C"]
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Bako SAE 5W-30 API SP",
+
+    "viscosity": "Petrol Engine Oil",
+    "viscosity_ko": "휘발유 엔진 오일",
+    "image": "Assets/Products/5w-30-4l.jpg",
+    "category": "Petrol",
+
+    "color": "#5c5c5c",
+    "table":[
+      ["APPEARANCE (Visual)", "Bright and Clear", "Visual", ""],
+      ["COLOR", "L2.0", "ASTM D1500", ""],
+      ["KINEMATIC VISCOSITY @ 40°C", "79.45", "ASTM D445", "cSt"],
+      ["KINEMATIC VISCOSITY @ 100°C", "10.64", "ASTM D445", "cSt"],
+      ["VISCOSITY INDEX", "119", "ASTM D2270", ""],
+      ["DENSITY @ 15°C", "0.868", "ASTM D4052", "g/cm3"],
+      ["TOTAL BASE NUMBER (TBN)", "5.22", "ASTM D2896", "mgKOH/g"],
+      ["FLASH POINT (COC)", "225", "ASTM D92", "°C"],
+      ["POUR POINT", "-30", "ASTM D97", "°C"]
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Bako SAE 5W-40 API SP",
+
+    "viscosity": "Petrol Engine Oil – Fully Synthetic",
+    "viscosity_ko": "휘발유 엔진 오일 – 완전 합성",
+    "image": "Assets/Products/5w-40-4l.jpg",
+    "category": "Petrol",
+
+    "color": "#5c5c5c",
+    "table": [
+      ["APPEARANCE (Visual)", "Bright and Clear", "Visual", ""],
+      ["COLOR", "L2.0", "ASTM D1500", ""],
+      ["KINEMATIC VISCOSITY @ 40°C", "120.4", "ASTM D445", "cSt"],
+      ["KINEMATIC VISCOSITY @ 100°C", "14.31", "ASTM D445", "cSt"],
+      ["VISCOSITY INDEX", "119", "ASTM D2270", ""],
+      ["DENSITY @ 15°C", "0.8731", "ASTM D4052", "g/cm3"],
+      ["TOTAL BASE NUMBER (TBN)", "5.14", "ASTM D2896", "mgKOH/g"],
+      ["FLASH POINT (COC)", "228", "ASTM D92", "°C"],
+      ["POUR POINT", "-30", "ASTM D97", "°C"]
+    ]
+  },
+  {
+    "id": 5,
+    "name": "Bako SAE 10W-40 API SP",
+    "viscosity": "Petrol Engine Oil",
+    "viscosity_ko": "휘발유 엔진 오일",
+    "image": "Assets/Products/10w-40-4l.jpg",
+    "category": "Petrol",
+
+    "color": "#303030",
+    "table": [
+      ["APPEARANCE (Visual)", "Bright and Clear", "Visual", ""],
+      ["COLOR", "L2.0", "ASTM D1500", ""],
+      ["KINEMATIC VISCOSITY @ 40°C", "118.9", "ASTM D445", "cSt"],
+      ["KINEMATIC VISCOSITY @ 100°C", "14.08", "ASTM D445", "cSt"],
+      ["VISCOSITY INDEX", "118", "ASTM D2270", ""],
+      ["DENSITY @ 15°C", "0.8729", "ASTM D4052", "g/cm3"],
+      ["TOTAL BASE NUMBER (TBN)", "5.04", "ASTM D2896", "mgKOH/g"],
+      ["FLASH POINT (COC)", "228", "ASTM D92", "°C"],
+      ["POUR POINT", "-30", "ASTM D97", "°C"]
+    ]
+  },
+  {
+    "id": 6,
+    "name": "Bako SAE 5W-30 API CK-4",
+    "viscosity": "Diesel Engine Oil",
+    "image": "Assets/Products/5w-30-6l.jpg",
+    "category": "Diesel",
+
+    "color": "#5c5c5c",
+    "table": [
+      ["APPEARANCE (Visual)", "Bright and Clear", "Visual", ""],
+      ["COLOR", "L2.0", "ASTM D1500", ""],
+      ["KINEMATIC VISCOSITY @ 40°C", "78.55", "ASTM D445", "cSt"],
+      ["KINEMATIC VISCOSITY @ 100°C", "10.36", "ASTM D445", "cSt"],
+      ["VISCOSITY INDEX", "121", "ASTM D2270", ""],
+      ["DENSITY @ 15°C", "0.868", "ASTM D4052", "g/cm3"],
+      ["TOTAL BASE NUMBER (TBN)", "5.24", "ASTM D2896", "mgKOH/g"],
+      ["FLASH POINT (COC)", "225", "ASTM D92", "°C"],
+      ["POUR POINT", "-30", "ASTM D97", "°C"]
+    ]
+  },
+  {
+    "id": 7,
+    "name": "Bako SAE 10W-40 API CI-4",
+    "viscosity": "Diesel Engine Oil",
+    "viscosity_ko":"휘발유 엔진 오일 – 완전 합성",
+    "image": "Assets/Products/10w-40-6l.jpg",
+    "category": "Diesel",
+
+    "color": "#454545",
+    "table": [
+      ["APPEARANCE (Visual)", "Bright and Clear", "Visual", ""],
+      ["COLOR", "L2.0", "ASTM D1500", ""],
+      ["KINEMATIC VISCOSITY @ 40°C", "118.4", "ASTM D445", "cSt"],
+      ["KINEMATIC VISCOSITY @ 100°C", "14.04", "ASTM D445", "cSt"],
+      ["VISCOSITY INDEX", "118", "ASTM D2270", ""],
+      ["DENSITY @ 15°C", "0.8730", "ASTM D4052", "g/cm3"],
+      ["TOTAL BASE NUMBER (TBN)", "5.11", "ASTM D2896", "mgKOH/g"],
+      ["FLASH POINT (COC)", "225", "ASTM D92", "°C"],
+      ["POUR POINT", "-30", "ASTM D97", "°C"]
+    ]
+  },
+  {
+    "id": 8,
+    "name": "Bako SAE 15W-40 API CI-4",
+    "viscosity": "Diesel Engine Oil – Semi Synthetic",
+    "viscosity_ko":"휘발유 엔진 오일 – 반합성",
+    "image": "Assets/Products/15w-40-6l.jpg",
+    "category": "Diesel",
+
+    "color": "#1665c2",
+    "table": [
+      ["APPEARANCE (Visual)", "Bright and Clear", "Visual", ""],
+      ["COLOR", "L2.0", "ASTM D1500", ""],
+      ["KINEMATIC VISCOSITY @ 40°C", "118.4", "ASTM D445", "cSt"],
+      ["KINEMATIC VISCOSITY @ 100°C", "14.21", "ASTM D445", "cSt"],
+      ["VISCOSITY INDEX", "120", "ASTM D2270", ""],
+      ["DENSITY @ 15°C", "0.8730", "ASTM D4052", "g/cm3"],
+      ["TOTAL BASE NUMBER (TBN)", "5.36", "ASTM D2896", "mgKOH/g"],
+      ["FLASH POINT (COC)", "226", "ASTM D92", "°C"],
+      ["POUR POINT", "-30", "ASTM D97", "°C"]
+    ]
+  },
+  {
+    "id": 13,
+    "name": "Bako SAE 15W-40 API CI-4",
+    "viscosity": "Diesel Engine Oil – Semi Synthetic",
+    "viscosity_ko":"휘발유 엔진 오일 – 반합성",
+    "image": "Assets/Products/15w-40-1l.jpg",
+    "category": "Diesel",
+    "color": "#1665c2",
+    "table": [
+      ["APPEARANCE (Visual)", "Bright and Clear", "Visual", ""],
+      ["COLOR", "L2.0", "ASTM D1500", ""],
+      ["KINEMATIC VISCOSITY @ 40°C", "118.4", "ASTM D445", "cSt"],
+      ["KINEMATIC VISCOSITY @ 100°C", "14.21", "ASTM D445", "cSt"],
+      ["VISCOSITY INDEX", "120", "ASTM D2270", ""],
+      ["DENSITY @ 15°C", "0.8730", "ASTM D4052", "g/cm3"],
+      ["TOTAL BASE NUMBER (TBN)", "5.36", "ASTM D2896", "mgKOH/g"],
+      ["FLASH POINT (COC)", "226", "ASTM D92", "°C"],
+      ["POUR POINT", "-30", "ASTM D97", "°C"]
+    ]
+  },
+  {
+    "id": 9,
+    "name": "Bako SAE 20W-50 API CI-4",
+    "viscosity": "Diesel Engine Oil",
+    "viscosity_ko":"휘발유 엔진 오일 – 반합성",
+    "image": "Assets/Products/20w-50-6l.jpg",
+    "category": "Diesel",
+
+    "color": "#8c9457",
+    "table": [
+      ["APPEARANCE (Visual)", "Bright and Clear", "Visual", ""],
+      ["COLOR", "L2.0", "ASTM D1500", ""],
+      ["KINEMATIC VISCOSITY @ 40°C", "169.8", "ASTM D445", "cSt"],
+      ["KINEMATIC VISCOSITY @ 100°C", "18.21", "ASTM D445", "cSt"],
+      ["VISCOSITY INDEX", "119", "ASTM D2270", ""],
+      ["DENSITY @ 15°C", "0.8750", "ASTM D4052", "g/cm3"],
+      ["TOTAL BASE NUMBER (TBN)", "5.24", "ASTM D2896", "mgKOH/g"],
+      ["FLASH POINT (COC)", "230", "ASTM D92", "°C"],
+      ["POUR POINT", "-24", "ASTM D97", "°C"]
+    ]
+  },
+  {
+    "id": 12,
+    "name": "Bako SAE 20W-50 API CI-4",
+    "viscosity": "Diesel Engine Oil",
+    "viscosity_ko":"휘발유 엔진 오일 – 반합성",
+    "image": "Assets/Products/20w-50-20l.jpg",
+    "category": "Diesel",
+    "color": "#8c9457",
+    "table": [
+      ["APPEARANCE (Visual)", "Bright and Clear", "Visual", ""],
+      ["COLOR", "L2.0", "ASTM D1500", ""],
+      ["KINEMATIC VISCOSITY @ 40°C", "169.8", "ASTM D445", "cSt"],
+      ["KINEMATIC VISCOSITY @ 100°C", "18.21", "ASTM D445", "cSt"],
+      ["VISCOSITY INDEX", "119", "ASTM D2270", ""],
+      ["DENSITY @ 15°C", "0.8750", "ASTM D4052", "g/cm3"],
+      ["TOTAL BASE NUMBER (TBN)", "5.24", "ASTM D2896", "mgKOH/g"],
+      ["FLASH POINT (COC)", "230", "ASTM D92", "°C"],
+      ["POUR POINT", "-24", "ASTM D97", "°C"]
+    ]
+  },
+  {
+    "id": 10,
+    "name": "Bako ATF DEXRON III",
+    "viscosity": "Automatic Transmission Fluid",
+    "viscosity_ko":"휘발유 엔진 오일 – 반합성",
+    "image": "Assets/Products/Dexron 3.jpg",
+    "category": "Lubricants",
+
+    "color": "#b42f30",
+    "table": [
+      ["APPEARANCE (Visual)", "Bright and Clear", "Visual", ""],
+      ["COLOR", "Red", "ASTM D1500", ""],
+      ["KINEMATIC VISCOSITY @ 40°C", "41.02", "ASTM D445", "cSt"],
+      ["KINEMATIC VISCOSITY @ 100°C", "7.02", "ASTM D445", "cSt"],
+      ["VISCOSITY INDEX", "132", "ASTM D2270", ""],
+      ["DENSITY @ 15°C", "0.8690", "ASTM D4052", "g/cm3"],
+      ["TOTAL BASE NUMBER (TBN)", "-", "ASTM D2896", "mgKOH/g"],
+      ["FLASH POINT (COC)", "224", "ASTM D92", "°C"],
+      ["POUR POINT", "-30", "ASTM D97", "°C"]
+    ]
+  },
+  {
+    "id": 11,
+    "name": "Bako Brake Fluid DOT-4",
+    "viscosity": "Brake Fluid",
+    "viscosity_ko":"브레이크 오일",
+    "image": "Assets/Products/4.jpg",
+    "category": "Lubricants",
+    "color": "#434350",
+    "table": [
+      ["APPEARANCE (Visual)", "Bright and Clear", "Visual", ""],
+      ["EQUILIBRIUM REFLUX BOILING POINT (ERBP)", "240", "FMVSS 116", "°C"],
+      ["WET ERBP", "160", "FMVSS 116", "°C"],
+      ["KINEMATIC VISCOSITY @ 100°C", "2.31", "ASTM D445", "cSt"],
+      ["DENSITY @ 15°C", "1.050", "ASTM D1298", "g/cm3"]
+    ]
+  }
+]
