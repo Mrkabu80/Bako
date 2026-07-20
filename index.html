@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="Assets/fav.jpg" />
+    <title data-i18n="BAKO Group">BAKO Group</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="font-sans antialiased">
+    <div id="header-placeholder"></div>
+
+    <div id="main-content">
+      <!-- Main Visual Section -->
+      <section class="main-visual">
+        <div class="content">
+          <!-- Card 1 -->
+           <a href="auto.html">
+          <div class="card auto">
+            <div class="card-image">
+              <img src="Assets/Home/card1.jpg" alt="Automotive Lubricants" />
+            </div>
+            <div class="card-content">
+              <div class="card-text">
+                <h4 style="color: #f4d16c;" data-i18n="We Lubricate Mobility">We Lubricate Mobility</h4>
+                <h2 data-i18n="Automotive Lubricants">Automotive Lubricants</h2>
+              </div>
+              <button 
+                class="btn text-[#f4d16c] border border-[#f4d16c] hover:bg-[#f4d16c] hover:text-white transition duration-300"
+                data-i18n="Learn More"
+              >
+                Learn more
+              </button>
+            </div>
+          </div>
+          </a>
+          <!-- Card 2 -->
+           <a href="industrial.html">
+          <div class="card industry">
+            <div class="card-image">
+              <img src="Assets/Home/card2.jpg" alt="Industrial Lubricants" />
+            </div>
+            <div class="card-content">
+              <div class="card-text">
+                <h4 style="color: #f4d16c;" data-i18n="We Lubricate Industry">We Lubricate Industry</h4>
+                <h2 data-i18n="Industrial Lubricants">Industrial Lubricants</h2>
+              </div>
+              <button 
+                class="btn text-[#f4d16c] border border-[#f4d16c] hover:bg-[#f4d16c] hover:text-white transition duration-300"
+                data-i18n="Learn More"
+              >
+                Learn more
+              </button>
+            </div>
+          </div>
+          </a>
+        </div>
+      </section>
+
+      <!-- Product Showcase -->
+      <section class="bg-white overflow-hidden">
+        <div class="px-0">
+          <div class="relative flex flex-col items-center py-10">
+            <div class="flex flex-col gap-8">
+
+              <!-- Product 1 -->
+              <a
+                href="products.html"
+                class="product-card bg-[#7f777] shadow-lg overflow-hidden block transition duration-300 relative flex flex-col lg:flex-row items-center"
+              >
+                <div class="w-full lg:w-1/2 p-8 flex flex-col justify-center text-left">
+                  <h3 class="text-2xl font-bold mb-2 text-[#ebd48c]" data-i18n="Industrial Lubricants">
+                    Industrial Lubricants
+                  </h3>
+                  <p class="mb-4 text-black" data-i18n="Specialized lubricants for industrial machinery, reducing friction and extending equipment life. Engineered for heavy-duty industrial applications, our lubricants minimize wear, reduce downtime, and enhance operational efficiency in manufacturing and construction environments.">
+                    Specialized lubricants for industrial machinery, reducing friction and extending equipment life.
+                    Engineered for heavy-duty industrial applications, our lubricants minimize wear, reduce downtime, and
+                    enhance operational efficiency in manufacturing and construction environments.
+                  </p>
+                  <button class="btn1" data-i18n="Learn More">Learn more</button>
+                </div>
+                <img
+                  src="Assets/Home/main2.PNG"
+                  alt="Industrial Lubricants"
+                  class="w-full lg:w-1/2 h-auto object-cover"
+                />
+              </a>
+
+              <!-- Product 2 -->
+              <a
+                href="products.html"
+                class="product-card bg-[ff777] shadow-md overflow-hidden block transition duration-300 relative flex flex-col lg:flex-row-reverse items-center"
+              >
+                <div class="w-full lg:w-1/2 p-6 flex flex-col justify-center text-left">
+                  <h3 class="text-2xl font-bold mb-2 text-[#ebd48c]" data-i18n="Automatic Transmission Fluid">
+                    Automatic Transmission Fluid
+                  </h3>
+                  <p class="mb-4 text-gray-700" data-i18n="Specialized fluid for automatic transmissions, ensuring smooth gear shifts and optimal performance. Formulated to deliver exceptional performance in automatic transmissions, our Dexron 3 fluid ensures smooth shifting, prevents overheating, and prolongs transmission life.">
+                    Specialized fluid for automatic transmissions, ensuring smooth gear shifts and optimal performance.
+                    Formulated to deliver exceptional performance in automatic transmissions, our Dexron 3 fluid ensures
+                    smooth shifting, prevents overheating, and prolongs transmission life.
+                  </p>
+                  <button class="btn1" data-i18n="Learn More">Learn more</button>
+                </div>
+                <img
+                  src="Assets/Home/dex .png"
+                  alt="Automatic Transmission Fluid"
+                  class="w-full lg:w-1/2 h-auto object-cover"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Award Section -->
+      <a href="Certificates.html" class="award group">
+        <section class="py-16 bg-white relative transition duration-300 award-bg">
+          <div 
+            class="absolute inset-0 bg-cover bg-center transition duration-300 group-hover:blur-sm" 
+            style="background-image: url('Assets/Home/All-Products-Background.png')"
+          ></div>
+          <div class="absolute inset-0 bg-black/30"></div>
+          <div class="container mx-auto px-4 relative z-10">
+            <div class="flex flex-col md:flex-row items-center">
+              <div class="md:w-1/2 mb-8 md:mb-0 md:pr-8 transition-transform duration-500 group-hover:-translate-y-2">
+                <img src="Assets/Home/award.png" alt="Award" class="w-full max-w-md mx-auto " />
+              </div>
+              <div class="md:w-1/2 transition-transform duration-500 group-hover:-translate-y-2">
+                <h2
+                  class="text-3xl font-bold text-white transition bg-clip-text group-hover:text-yellow-700 mb-5"
+                >
+                  Worldwide No.1* Mineral Oil
+                </h2>
+                <p class="text-lg text-gray-200 mb-6">
+                  Bako, the lubricant brand of world-class petrochemical company
+                  GS Caltex, is trusted by customers worldwide.
+                </p>
+                <p
+                  class="text-gray-200 text-sm shadow-md shadow-lg p-4 rounded-lg mb-2 opacity-0 group-hover:opacity-100 transition duration-500 delay-100"
+                >
+                  *Recognized as Korea's No. 1 brand in the lubricant category
+                  as winner of Korea's First Brand Awards for nine consecutive
+                  years
+                </p>
+                <span class="btn">Learn More</span>
+              </div>
+            </div>
+          </div>
+        </section>
+      </a>
+
+    <section class="bg-white py-16">
+  <div class="container mx-auto px-6 md:px-12 flex flex-col md:flex-row items-center gap-10">
+    <div class="md:w-1/3">
+      <img src="Assets/manger.jpg" alt="Managing Director" class="rounded-2xl shadow-lg w-full object-cover">
+    </div>
+    <div class="md:w-2/3">
+      <h2 class="text-3xl font-bold text-yellow-700 mb-4" data-i18n="Message from Our Managing Director">Message from Our Managing Director</h2>
+      <p class="text-gray-700 leading-relaxed mb-4" data-i18n="At BAKO Group, our mission is to drive innovation and sustainability in lubrication technology. We believe that every drop of oil we produce carries our commitment to quality, reliability, and global progress.">
+        At <strong>BAKO Group</strong>, our mission is to drive innovation and sustainability in lubrication technology.
+        We believe that every drop of oil we produce carries our commitment to quality, reliability, and global progress.
+      </p>
+      <p class="text-gray-700 italic" data-i18n="“Our journey is not just about performance — it’s about partnership, trust, and building a better future together.”">
+        “Our journey is not just about performance — it’s about partnership, trust, and building a better future together.”
+      </p>
+    
+    </div>
+  </div>
+</section>
+    <!-- Our Partners Section -->
+    
+
+      <div class="Divider px-1 py-2"></div>
+    </div>
+
+    <div id="footer-placeholder"></div>
+
+    
+
+    <!-- About Modal -->
+    <div
+      id="about-modal"
+      class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 hidden opacity-0 transition-opacity duration-300"
+    >
+      <div
+        class="hero-gradient rounded-lg shadow-lg p-8 w-11/12 md:w-1/2 relative transform scale-95 transition-transform duration-300 text-white"
+      >
+        <button
+          id="close-about-modal"
+          class="absolute top-2 right-2 text-white hover:text-gray-300 text-xl"
+        >
+          &times;
+        </button>
+        <div id="about-modal-placeholder"></div>
+        <button
+          id="close-about-modal-button"
+          class="mt-6 bg-white/20 text-white px-4 py-2 rounded hover:bg-white/30"
+          data-i18n="Close"
+        >
+          Close
+        </button>
+      </div>
+    </div>
+  </body>
+</html>
+<script src="main.js"></script>
+<script src="script.js"></script>
+
+
+   

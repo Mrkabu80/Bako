@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="Assets/fav.jpg" />
+    <title data-i18n="BAKO Group">BAKO Group</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="font-sans antialiased text-gray-800" >
+    <div id="header-placeholder"></div>
+
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-16">
+      <div class="text-center mb-16">
+        <h1
+          class="text-4xl font-bold text-gray-100 rounded-lg px-4 py-2 pb-2 inline-block"
+          style="background-color: #e5cc75;"
+          data-i18n="Our Certificates & Achievements"
+        >
+          Our Certificates & Achievements
+        </h1>
+        <p
+          class="text-gray-500 mt-2"
+          data-i18n="We are proud to present the highest standards of quality and excellence."
+        >
+          We are proud to present the highest standards of quality and
+          excellence.
+        </p>
+      </div>
+
+      <!-- Container for certificate sections -->
+      <div id="certificates-container" class="space-y-16">
+        <!-- Certificate sections will be inserted here by JavaScript -->
+      </div>
+    </div>
+
+    <!-- Modal for displaying the enlarged image -->
+    <div
+      id="image-modal"
+      class="modal fixed inset-0 bg-black bg-opacity-70 flex items-center justify-center p-4 z-50 opacity-0 pointer-events-none"
+    >
+      <div class="bg-white p-2 rounded-lg max-w-4xl max-h-full">
+        <img
+          id="modal-img"
+          src=""
+          alt="Enlarged certificate image"
+          class="max-w-full max-h-[90vh] object-contain"
+        />
+      </div>
+    </div>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const certificatesContainer = document.getElementById(
+          "certificates-container"
+        );
+        const modal = document.getElementById("image-modal");
+        const modalImg = document.getElementById("modal-img");
+        let currentLang = localStorage.getItem("lang") || "en";
+
+        const certificates_data = {
+          en: [
+            {
+              id: 1,
+              title: "Environmental Management System ISO 14001",
+              year: "2015",
+              description:
+                "Awarded to Bako Group for our commitment to environmental protection and sustainability.",
+              image: "Assets/awards/c1.jpg",
+            },
+            {
+              id: 2,
+              title: "Environmental Management System ISO 9001",
+              year: "2015",
+              description:
+                "Recognizes Bako Group's dedication to maintaining the highest quality management standards.",
+              image: "Assets/awards/c2.jpg",
+            },
+            {
+              id: 3,
+              title: "Occupational Health & Safety Management System ISO 45001",
+              year: "2018",
+              description:
+                "Acknowledges Bako Group's prioritization of employee safety and health in our operations.",
+              image: "Assets/awards/c3.jpg",
+            },
+            {
+              id: 4,
+              title: "REACH Compliant",
+              year: " ",
+              description:
+                "Confirms that Bako Group adheres to European regulations for the safe use of chemicals.",
+              image: "Assets/awards/c4.jpg",
+            },
+            {
+              id: 5,
+              title: "",
+              year: "2015",
+              description: "",
+              image: "Assets/awards/c5.jpg",
+            },
+            {
+              id: 6,
+              title: " ",
+              year: "2025",
+              description: " ",
+              image: "Assets/awards/c6.jpg",
+            },
+            {
+              id: 7,
+              title: " ",
+              year: "2025",
+              description: " ",
+              image: "Assets/awards/c7.jpg",
+            },
+            {
+              id: 8,
+              title: "",
+              year: "2025",
+              description: " ",
+              image: "Assets/awards/c8.jpg",
+            },
+          ],
+          ko: [
+            {
+              id: 1,
+              title: "환경 경영 시스템 ISO 14001",
+              year: "2015",
+              description:
+                "Bako Group의 환경 보호와 지속 가능성에 대한 헌신을 인정받아 수여된 인증입니다.",
+              image: "Assets/awards/c1.jpg",
+            },
+            {
+              id: 2,
+              title: "품질 경영 시스템 ISO 9001",
+              year: "2015",
+              description:
+                "Bako Group가 최고의 품질 관리 표준을 유지하는 데 헌신한 것을 인정받았습니다.",
+              image: "Assets/awards/c2.jpg",
+            },
+            {
+              id: 3,
+              title: "산업 안전 보건 경영 시스템 ISO 45001",
+              year: "2018",
+              description:
+                "Bako Group의 직원 안전과 건강을 최우선으로 하는 운영을 인정받았습니다.",
+              image: "Assets/awards/c3.jpg",
+            },
+            {
+              id: 4,
+              title: "REACH 준수",
+              year: " ",
+              description:
+                "Bako Group가 화학 물질의 안전한 사용을 위한 유럽 규정을 준수하고 있음을 확인합니다.",
+              image: "Assets/awards/c4.jpg",
+            },
+            {
+              id: 5,
+              title: "",
+              year: "2015",
+              description: "",
+              image: "Assets/awards/c5.jpg",
+            },
+            {
+              id: 6,
+              title: " ",
+              year: "2025",
+              description: " ",
+              image: "Assets/awards/c6.jpg",
+            },
+            {
+              id: 7,
+              title: " ",
+              year: "2025",
+              description: " ",
+              image: "Assets/awards/c7.jpg",
+            },
+            {
+              id: 8,
+              title: "",
+              year: "2025",
+              description: " ",
+              image: "Assets/awards/c8.jpg",
+            },
+          ],
+          tr: [
+            {
+              id: 1,
+              title: "Çevre Yönetim Sistemi ISO 14001",
+              year: "2015",
+              description:
+                "Bako Group'un çevre koruma ve sürdürülebilirliğe olan bağlılığını takdir eden sertifika.",
+              image: "Assets/awards/c1.jpg",
+            },
+            {
+              id: 2,
+              title: "Kalite Yönetim Sistemi ISO 9001",
+              year: "2015",
+              description:
+                "Bako Group'un en yüksek kalite yönetim standartlarını sürdürme konusundaki özverisini tanır.",
+              image: "Assets/awards/c2.jpg",
+            },
+            {
+              id: 3,
+              title: "İş Sağlığı ve Güvenliği Yönetim Sistemi ISO 45001",
+              year: "2018",
+              description:
+                "Bako Group'un operasyonlarında çalışan güvenliği ve sağlığına öncelik verdiğini kabul eder.",
+              image: "Assets/awards/c3.jpg",
+            },
+            {
+              id: 4,
+              title: "REACH Uyumlu",
+              year: " ",
+              description:
+                "Bako Group'un kimyasalların güvenli kullanımıyla ilgili Avrupa düzenlemelerine uyduğunu onaylar.",
+              image: "Assets/awards/c4.jpg",
+            },
+            {
+              id: 5,
+              title: "",
+              year: "2015",
+              description: "",
+              image: "Assets/awards/c5.jpg",
+            },
+            {
+              id: 6,
+              title: " ",
+              year: "2025",
+              description: " ",
+              image: "Assets/awards/c6.jpg",
+            },
+            {
+              id: 7,
+              title: " ",
+              year: "2025",
+              description: " ",
+              image: "Assets/awards/c7.jpg",
+            },
+            {
+              id: 8,
+              title: "",
+              year: "2025",
+              description: " ",
+              image: "Assets/awards/c8.jpg",
+            },
+          ],
+          fr: [
+            {
+              id: 1,
+              title: "Système de gestion environnementale ISO 14001",
+              year: "2015",
+              description:
+                "Décerné au groupe Bako pour son engagement envers la protection de l'environnement et la durabilité.",
+              image: "Assets/awards/c1.jpg",
+            },
+            {
+              id: 2,
+              title: "Système de gestion de la qualité ISO 9001",
+              year: "2015",
+              description:
+                "Reconnaît l'engagement du groupe Bako à maintenir les normes de gestion de la qualité les plus élevées.",
+              image: "Assets/awards/c2.jpg",
+            },
+            {
+              id: 3,
+              title: "Système de gestion de la santé et de la sécurité au travail ISO 45001",
+              year: "2018",
+              description:
+                "Reconnaît la priorité du groupe Bako à la sécurité et à la santé de ses employés.",
+              image: "Assets/awards/c3.jpg",
+            },
+            {
+              id: 4,
+              title: "Conforme au REACH",
+              year: " ",
+              description:
+                "Confirme que le groupe Bako respecte les réglementations européennes sur l'utilisation sûre des produits chimiques.",
+              image: "Assets/awards/c4.jpg",
+            },
+            {
+              id: 5,
+              title: "",
+              year: "2015",
+              description: "",
+              image: "Assets/awards/c5.jpg",
+            },
+            {
+              id: 6,
+              title: " ",
+              year: "2025",
+              description: " ",
+              image: "Assets/awards/c6.jpg",
+            },
+            {
+              id: 7,
+              title: " ",
+              year: "2025",
+              description: " ",
+              image: "Assets/awards/c7.jpg",
+            },
+            {
+              id: 8,
+              title: "",
+              year: "2025",
+              description: " ",
+              image: "Assets/awards/c8.jpg",
+            },
+          ],
+          zh: [
+            {
+              id: 1,
+              title: "环境管理体系 ISO 14001",
+              year: "2015",
+              description:
+                "授予 Bako 集团，以表彰其对环境保护和可持续发展的承诺。",
+              image: "Assets/awards/c1.jpg",
+            },
+            {
+              id: 2,
+              title: "质量管理体系 ISO 9001",
+              year: "2015",
+              description:
+                "认可 Bako 集团在保持最高质量管理标准方面的奉献精神。",
+              image: "Assets/awards/c2.jpg",
+            },
+            {
+              id: 3,
+              title: "职业健康与安全管理体系 ISO 45001",
+              year: "2018",
+              description:
+                "表彰 Bako 集团在运营中优先保障员工健康与安全。",
+              image: "Assets/awards/c3.jpg",
+            },
+            {
+              id: 4,
+              title: "符合 REACH 标准",
+              year: " ",
+              description:
+                "确认 Bako 集团遵守欧洲化学品安全使用法规。",
+              image: "Assets/awards/c4.jpg",
+            },
+            {
+              id: 5,
+              title: "",
+              year: "2015",
+              description: "",
+              image: "Assets/awards/c5.jpg",
+            },
+            {
+              id: 6,
+              title: " ",
+              year: "2025",
+              description: " ",
+              image: "Assets/awards/c6.jpg",
+            },
+            {
+              id: 7,
+              title: " ",
+              year: "2025",
+              description: " ",
+              image: "Assets/awards/c7.jpg",
+            },
+            {
+              id: 8,
+              title: "",
+              year: "2025",
+              description: " ",
+              image: "Assets/awards/c8.jpg",
+            },
+          ],
+        };
+
+        function renderCertificates(lang) {
+          certificatesContainer.innerHTML = "";
+          const certificates = certificates_data[lang];
+          certificates.forEach((cert) => {
+            const section = document.createElement("div");
+            section.className = "flex items-center gap-4 sm:gap-8 lg:gap-12";
+            if (cert.id % 2 === 0) {
+              section.classList.add("flex-row-reverse");
+            }
+            section.innerHTML = `
+                        <div class="w-5/3 lg:w-1/3">
+                            <img src="${cert.image}" 
+                                 alt="${cert.title}" 
+                                 class="rounded-lg shadow-xl cursor-pointer w-full h-auto object-cover certificate-image hover:scale-105 duration-200 transition-transform" 
+                                 onerror="this.onerror=null;this.src='https://placehold.co/800x600/f87171/fff?text=Image+Not+Found';">
+                        </div>
+                        <div class="w-3/5 lg:w-1/2 text-left">
+                            <span class="inline-block bg-gray-100 text-[var(--black-color)] text-xs sm:text-sm font-semibold px-2 sm:px-3 py-1 rounded-full mb-2 sm:mb-4">${cert.year}</span>
+                            <h2 class="text-lg sm:text-2xl lg:text-3xl font-bold text-yellow-700 mb-2 sm:mb-4">${cert.title}</h2>
+                            <p class="text-xs sm:text-base text-gray-600 leading-snug sm:leading-relaxed">${cert.description}</p>
+                        </div>
+                    `;
+            certificatesContainer.appendChild(section);
+          });
+
+          document
+            .querySelectorAll(".certificate-image")
+            .forEach((img, index) => {
+              img.addEventListener("click", () => {
+                modalImg.src = certificates[index].image;
+                modal.classList.remove("opacity-0", "pointer-events-none");
+              });
+            });
+        }
+
+        renderCertificates(currentLang);
+
+        window.addEventListener("languageChange", (e) => {
+          currentLang = e.detail.lang;
+          renderCertificates(currentLang);
+        });
+
+        modal.addEventListener("click", (e) => {
+          if (e.target.id === "image-modal") {
+            modal.classList.add("opacity-0", "pointer-events-none");
+          }
+        });
+      });
+    </script>
+
+    <div id="footer-placeholder"></div>
+
+    <script src="main.js"></script>
+
+    <!-- Terms Modal -->
+    <div
+      id="terms-modal"
+      class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 hidden"
+    >
+      <div class="bg-white rounded-lg shadow-lg p-8 w-11/12 md:w-1/2 relative">
+        <button
+          id="close-terms-modal"
+          class="absolute top-2 right-2 text-gray-500 hover:text-[var(--red-color)] text-xl"
+        >
+          &times;
+        </button>
+        <h2
+          class="text-2xl font-bold mb-4 text-[var(--feather-color)]"
+          data-i18n="Terms and Conditions"
+        >
+          Terms and Conditions
+        </h2>
+        <p class="text-gray-700" data-i18n="Terms and Conditions content...">
+          Terms and Conditions content...
+        </p>
+        <button
+          id="close-terms-modal-button"
+          class="mt-6 bg-[var(--black-color)] text-white px-4 py-2 rounded hover:bg-[var(--red-color)]"
+          data-i18n="Close"
+        >
+          Close
+        </button>
+      </div>
+    </div>
+
+    <!-- About Modal -->
+    <div
+      id="about-modal"
+      class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 hidden opacity-0 transition-opacity duration-300"
+    >
+      <div
+        class="hero-gradient rounded-lg shadow-lg p-8 w-11/12 md:w-1/2 relative transform scale-95 transition-transform duration-300 text-white"
+      >
+        <button
+          id="close-about-modal"
+          class="absolute top-2 right-2 text-white hover:text-gray-300 text-xl"
+        >
+          &times;
+        </button>
+        <div id="about-modal-placeholder"></div>
+        <button
+          id="close-about-modal-button"
+          class="mt-6 bg-white/20 text-white px-4 py-2 rounded hover:bg-white/30"
+          data-i18n="Close"
+        >
+          Close
+        </button>
+      </div>
+    </div>
+
+  </body>
+</html>
